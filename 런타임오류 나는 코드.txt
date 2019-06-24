@@ -1,0 +1,96 @@
+firestore에서 실시간으로 데이터받는 앱
+
+런타임오류 나는 코드 
+
+-- MainActivity.java --
+
+package com.pnp.firestoretest;
+
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
+
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+
+public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
+
+    private static final String KEY_TEMP = "temp";
+    private static final String KEY_HUMIDITY = "humidity";
+
+    private TextView textViewData;
+
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private DocumentReference noteRef = db.document("AirCondition/sensordata"); // 파이어스토어 컬렉션/문서 디렉토리
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        textViewData = findViewById(R.id.text_view_data);
+
+        noteRef.addSnapshotListener(new EventListener<DocumentSnapshot>() { //실시간 데이터베이스 받아오는 함수
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot snapshot,
+                                @Nullable FirebaseFirestoreException e) {
+                if (e != null) {
+                    Log.w(TAG, "Listen failed.", e);
+                    return;
+                }
+
+                if (snapshot != null && snapshot.exists()) {
+                    Log.d(TAG, "Current data: " + snapshot.getData());
+                    String temp = snapshot.getString(KEY_TEMP);
+                    String humidity = snapshot.getString(KEY_HUMIDITY);
+
+                    textViewData.setText("temp: " + temp + "\n" + "humidity: " + humidity);
+
+                } else {
+                    Log.d(TAG, "Current data: null");
+                }
+            }
+
+        });
+    }
+}
+
+-- MainActivity.java --
+
+
+
+-- activity_main.xml --
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.pnp.firestoretest.MainActivity"> // 자기 프로젝트 이름
+
+    <TextView
+        android:id="@+id/text_view_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+-- activity_main.xml --
+
+<참고한 사이트> 
+
+https://youtu.be/LfkhFCDnkS0
+
+<위의 영상 내 코드>
+
+https://codinginflow.com/tutorials/android/cloud-firestore/part-4-snapshotlistener
