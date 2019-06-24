@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--기기점검-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp">
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/temp_progress"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            app:arc_unfinished_color="#c5cae9"
+            app:arc_finished_color="#1a237e"
+            app:arc_bottom_text="온도"
+            app:arc_text_color="#1a237e"
+            app:arc_text_size="40dp"
+            app:arc_bottom_text_size="20dp"/>
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/hum_progress"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            app:arc_unfinished_color="#c5cae9"
+            app:arc_finished_color="#1a237e"
+            app:arc_bottom_text="습도"
+            app:arc_text_color="#1a237e"
+            app:arc_text_size="40dp"
+            app:arc_bottom_text_size="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
