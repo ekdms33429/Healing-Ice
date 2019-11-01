@@ -1,0 +1,177 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:fillViewport="true"
+    android:layout_marginTop="0dp"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 기기관리 탭 -->
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:background="#C5CAE9">
+
+        <!-- Row 1 Starts From Here -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:background="#e4e6f7"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="잔여량"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:layout_span="3"
+                android:background="#e4e6f7"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+        </TableRow>
+
+        <!-- Row 2 Starts From Here -->
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="우유"
+            android:textSize="12dp"
+            android:padding="20dp"
+            android:background="#C5CAE9"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/milk_value"
+                android:textSize="12dp"
+                android:background="#C5CAE9"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                />
+            <!-- 프로그레스바 -->
+            <ProgressBar
+                android:id="@+id/milk_weight"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#C5CAE9"
+                android:max="100"
+                android:layout_weight="3"
+                android:progressDrawable="@drawable/progeressbar" />
+
+        </TableRow>
+        <!-- Row 4 Starts From Here -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#e4e6f7">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/ratio"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:layout_span="3"
+                android:background="#e4e6f7"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </TableRow>
+        <!-- Row 5 Starts From Here -->
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="파우더"
+                android:textSize="12dp"
+                android:padding="20dp"
+                android:background="#C5CAE9"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="2.3"
+                />
+
+            <!-- 프로그레스바 -->
+            <ProgressBar
+                android:id="@+id/pow_progress"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#C5CAE9"
+                android:max="10"
+                android:layout_weight="2.7"
+                android:progressDrawable="@drawable/progeressbar" />
+        </TableRow>
+        <!-- Row 6 Starts From Here -->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:background="#C5CAE9"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="우유"
+                android:textSize="12dp"
+                android:padding="20dp"
+                android:background="#C5CAE9"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="2.3"
+                />
+
+            <!-- 프로그레스바 -->
+            <ProgressBar
+                android:id="@+id/milk_progress"
+                android:max="10"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/progeressbar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.7"/>
+            <!--// 프로그레스바 -->
+
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
