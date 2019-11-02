@@ -10,8 +10,14 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+<<<<<<< HEAD
 import android.view.LayoutInflater;
 
+=======
+import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
 import android.view.View;
 import android.widget.TextView;
 
@@ -33,7 +39,11 @@ public class Machine2Activity extends AppCompatActivity {
         mTabLayout.addTab(mTabLayout.newTab().setCustomView(createTabView("모드선택")));
         mTabLayout.addTab(mTabLayout.newTab().setCustomView(createTabView("판매량")));
         mTabLayout.addTab(mTabLayout.newTab().setCustomView(createTabView("기기점검")));
+<<<<<<< HEAD
 
+=======
+        //mTabLayout.addTab(mTabLayout.newTab().setCustomView(createTabView("뭐할까")));
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
 
 
         mViewPager = (ViewPager) findViewById(R.id.pager_content);

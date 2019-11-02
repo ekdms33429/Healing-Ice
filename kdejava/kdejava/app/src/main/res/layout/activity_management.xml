@@ -15,13 +15,20 @@
         android:weightSum="10"
         android:shrinkColumns="*"
         android:stretchColumns="*"
+<<<<<<< HEAD
         android:background="#C5CAE9">
+=======
+        android:background="#EDE7F6">
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
 
         <!-- Row 1 Starts From Here -->
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="0dp"
+<<<<<<< HEAD
             android:background="#e4e6f7"
+=======
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
             android:gravity="center_horizontal"
             android:layout_weight="1">
 
@@ -32,7 +39,11 @@
                 android:textSize="20dp"
                 android:padding="20dp"
                 android:layout_span="3"
+<<<<<<< HEAD
                 android:background="#e4e6f7"
+=======
+                android:background="#EDE7F6"
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
                 android:textColor="#000"
                 android:textStyle="bold"
                 android:layout_gravity="center"/>
@@ -42,6 +53,7 @@
         <!-- Row 2 Starts From Here -->
         <TableRow
             android:layout_width="0dp"
+<<<<<<< HEAD
             android:layout_height="0dp"
             android:gravity="center_horizontal"
             android:layout_weight="1"
@@ -82,13 +94,112 @@
                 android:layout_weight="3"
                 android:progressDrawable="@drawable/progeressbar" />
 
+=======
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_weight="4"
+            android:weightSum="2">
+
+            <ProgressBar
+                android:id="@+id/power_weight"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:max="100"
+                android:progress="0"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/milk_amount"
+
+                />
+
+            <ProgressBar
+                android:id="@+id/milk_weight"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:max="100"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:progress="0"
+                android:progressDrawable="@drawable/milk_amount"
+
+                />
+        </TableRow>
+
+        <!-- Row 3 Starts From Here -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/power_value"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/milk_value"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="#EDE7F6"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="파우더"
+                android:textSize="12dp"
+                android:padding="20dp"
+                android:background="#EDE7F6"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="우유"
+                android:textSize="12dp"
+                android:padding="20dp"
+                android:background="#EDE7F6"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
         </TableRow>
         <!-- Row 4 Starts From Here -->
         <TableRow
             android:layout_width="fill_parent"
             android:layout_height="0dp"
+<<<<<<< HEAD
             android:layout_weight="1"
             android:background="#e4e6f7">
+=======
+            android:layout_weight="1">
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
 
             <TextView
                 android:layout_width="fill_parent"
@@ -97,7 +208,11 @@
                 android:textSize="20dp"
                 android:padding="20dp"
                 android:layout_span="3"
+<<<<<<< HEAD
                 android:background="#e4e6f7"
+=======
+                android:background="#C5CAE9"
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
                 android:textColor="#000000"
                 android:textStyle="bold"
                 android:gravity="center"/>
@@ -133,8 +248,17 @@
                 android:layout_height="match_parent"
                 android:background="#C5CAE9"
                 android:max="10"
+<<<<<<< HEAD
                 android:layout_weight="2.7"
                 android:progressDrawable="@drawable/progeressbar" />
+=======
+                android:progress="3"
+                android:layout_weight="2.7"
+                android:progressDrawable="@drawable/progeressbar" />
+
+
+
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
         </TableRow>
         <!-- Row 6 Starts From Here -->
         <TableRow
@@ -164,6 +288,10 @@
             <ProgressBar
                 android:id="@+id/milk_progress"
                 android:max="10"
+<<<<<<< HEAD
+=======
+                android:progress="5"
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:progressDrawable="@drawable/progeressbar"
                 android:layout_width="0dp"
@@ -172,6 +300,9 @@
             <!--// 프로그레스바 -->
 
         </TableRow>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
     </TableLayout>
 </ScrollView>

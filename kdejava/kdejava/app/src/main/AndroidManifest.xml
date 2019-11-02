@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <service
             android:name=".NotificationService"
             android:enabled="true"
@@ -20,6 +21,8 @@
 
         <activity android:name=".MonthGraphActivity" />
         <activity android:name=".TimegraphActivity" />
+=======
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
 
         <meta-data
             android:name="firebase_messaging_auto_init_enabled"
@@ -27,6 +30,11 @@
         <meta-data
             android:name="firebase_analytics_collection_enabled"
             android:value="false" />
+<<<<<<< HEAD
+=======
+
+        <!-- Splash -->
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
@@ -37,6 +45,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".MainActivity" />
         <activity android:name=".ListActivity" />
         <activity
@@ -45,6 +54,17 @@
         <activity
             android:name=".Machine2Activity"
             android:theme="@style/SimpleTheme" />
+=======
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ListActivity" />
+        <activity android:name=".Machine1Activity"
+            android:theme="@style/SimpleTheme"/>
+        <activity android:name=".Machine2Activity"
+            android:theme="@style/SimpleTheme"/>
+
+
+
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
     </application>
 
 </manifest>

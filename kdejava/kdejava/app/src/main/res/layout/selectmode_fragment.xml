@@ -36,7 +36,11 @@
             android:layout_height="match_parent"
             android:src="@drawable/iceoff"
             android:padding="0dp"
+<<<<<<< HEAD
             android:layout_weight="1.5"
+=======
+            android:layout_weight="1"
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
             android:scaleType="fitCenter"
             android:layout_marginTop="15dp"
             android:layout_marginRight="30dp"
@@ -50,11 +54,30 @@
             android:src="@drawable/drinkoff"
             android:padding="0dp"
             android:scaleType="fitCenter"
+<<<<<<< HEAD
             android:layout_weight="1.5"
+=======
+            android:layout_weight="1"
             android:layout_marginTop="15dp"
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
             android:background="#eceff1"/>
+        <ImageButton
+            android:id="@+id/button_clean"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cleanoff"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="#eceff1"/>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
     </LinearLayout>
 </LinearLayout>

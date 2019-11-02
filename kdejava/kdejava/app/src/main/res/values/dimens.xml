@@ -3,6 +3,9 @@
     <dimen name="icon_top_margin">24dp</dimen>
     <dimen name="icon_bottom_margin">24dp</dimen>
     <dimen name="title_bottom_margin">16dp</dimen>
+<<<<<<< HEAD
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+=======
+>>>>>>> 706198c7c6cbc69281001edfeca32ba8a54a40b9
 </resources>
